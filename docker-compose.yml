@@ -1,0 +1,19 @@
+services:
+  postgress:
+    container_name: ms_pg_sql
+    image: postgress
+    environment:
+      POSTGRES_USER: taha
+      POSTGRES_PASSWORD: taha
+      PGDATA: /var/lib/postgresql/data
+
+networks:
+  microservices-net:
+    driver: bridge
+
+
+
+volumes:
+  postgress:
+  pgadmin:
+  mongo:
