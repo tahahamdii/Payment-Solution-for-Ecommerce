@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/services/ConfigServer/ConfigServer.iml" filepath="$PROJECT_DIR$/services/ConfigServer/ConfigServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/Discovery/Discovery.iml" filepath="$PROJECT_DIR$/services/Discovery/Discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Payment.iml" filepath="$PROJECT_DIR$/.idea/Payment.iml" />
     </modules>
   </component>

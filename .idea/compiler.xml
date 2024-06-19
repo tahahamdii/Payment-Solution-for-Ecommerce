@@ -6,16 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Discovery" />
         <module name="ConfigServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ConfigServer" target="17" />
+      <module name="Discovery" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ConfigServer" options="-parameters" />
+      <module name="Discovery" options="-parameters" />
     </option>
   </component>
 </project>
