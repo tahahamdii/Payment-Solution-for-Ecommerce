@@ -1,7 +1,9 @@
+version: '3.8'
+
 services:
   postgress:
     container_name: ms_pg_sql
-    image: postgress
+    image: postgres
     environment:
       POSTGRES_USER: taha
       POSTGRES_PASSWORD: taha
@@ -9,7 +11,7 @@ services:
     volumes:
       - postgres:/var/lib/postgresql/data
     ports:
-      - 5432:5432
+      - "5432:5432"
     networks:
       - microservices-net
     restart: unless-stopped
@@ -24,7 +26,7 @@ services:
     volumes:
       - pgadmin:/var/lib/pgadmin
     ports:
-      - 5050:80
+      - "5050:80"
     networks:
       - microservices-net
     restart: unless-stopped
@@ -33,31 +35,43 @@ services:
     image: mongo
     container_name: mongo_db
     ports:
-      - 27017:27017
+      - "27017:27017"
     volumes:
       - mongo:/data
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=taha
-      - MONGO_INITDB_ROOT_PASSWORD=taha
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    networks:
+      - microservices-net
 
-    mongo-express:
-      image: mongo-express
-      container_name: mongo_express
-      restart: always
-      ports:
-        - 8081:8081
-      environment:
-        - ME_CONFIG_MONGODB_ADMINUSERNAME=taha
-        - ME_CONFIG_MONGODB_ADMINPASSWORD=taha
-        - ME_CONFIG_MONGODB_SERVER=mongodb
+  mongo-express:
+    image: mongo-express
+    container_name: mongo_express
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: root
+      ME_CONFIG_MONGODB_SERVER: mongo_db
+    networks:
+      - microservices-net
+
+
+  mail-dev:
+    container_name: ms-mail-dev
+    image: maildev/maildev
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+    networks:
+      - microservices-net
 
 networks:
   microservices-net:
     driver: bridge
 
-
-
 volumes:
-  postgress:
+  postgres:
   pgadmin:
   mongo:
