@@ -31,3 +31,7 @@ Tservices/customer/src/main/java/com/taha/payment/handler/GlobalExceptionHandler
 Kservices/customer/src/main/java/com/taha/payment/handler/ErrorResponse.java,9\6\96d5859735a4b2071de10a693de3e75703d0cafe
 H
 services/product/pom.xml,8\4\84c85679fbed56170f91b7779f2667c405614104
+t
+Dservices/product/src/main/java/com/taha/payment/product/Product.java,f\5\f5d62388cfc792060a5dd34da2db95dff76cb92a
+v
+Fservices/product/src/main/java/com/taha/payment/category/Category.java,b\e\be264c020bf6e55e5742b776b8103e9aaa3ee365
