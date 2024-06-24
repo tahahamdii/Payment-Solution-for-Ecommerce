@@ -10,7 +10,9 @@
       <user-name>taha</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="database" qname="product" />
+          <node kind="database" qname="product">
+            <node kind="schema" qname="public" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>
