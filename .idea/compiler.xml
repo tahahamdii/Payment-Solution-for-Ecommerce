@@ -12,12 +12,6 @@
         <module name="customer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ConfigServer" target="17" />
-      <module name="customer" target="17" />
-      <module name="Discovery" target="17" />
-      <module name="product" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
