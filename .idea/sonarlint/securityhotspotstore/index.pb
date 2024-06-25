@@ -55,3 +55,5 @@ Jservices/product/src/main/java/com/taha/payment/product/ProductMapper.java,1\a
 Xservices/customer/src/main/java/com/taha/payment/exception/ProductPurchaseException.java,2\6\26e32e4f695e9e46430c4c48864bdcbf80221f39
 €
 Pservices/product/src/main/java/com/taha/payment/exception/PurchaseException.java,8\e\8e561c0eb55ec6ae53cb0d47d738e4204ccd137c
+ƒ
+Sservices/product/src/main/java/com/taha/payment/handler/GlobalExceptionHandler.java,b\d\bdfc9d9cb892e3061770ae7c75bb350b3c356dea
