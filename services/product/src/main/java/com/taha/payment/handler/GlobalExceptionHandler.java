@@ -1,7 +1,6 @@
 package com.taha.payment.handler;
 
 
-import com.taha.payment.exception.CustomerNotFoundException;
 import com.taha.payment.exception.ProductPurchaseException;
 import jakarta.persistence.EntityNotFoundException;
 import org.apache.http.HttpStatus;
