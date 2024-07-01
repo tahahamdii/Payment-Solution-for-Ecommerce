@@ -113,3 +113,11 @@ Nservices/Order/src/main/java/com/example/Order/orderline/OrderLineRequest.java
 Qservices/Order/src/main/java/com/example/Order/orderline/OrderLineRepository.java,e\2\e2c607765e918ffc8b51a5a4141038b565ff10f2
 }
 Mservices/Order/src/main/java/com/example/Order/orderline/OrderLineMapper.java,b\9\b923ed6ecdf0c2841c7aa3cfadc2eab3db1fc0d0
+€
+Pservices/Order/src/main/java/com/example/Order/config/KafkaOrderTopicConfig.java,3\1\310844fb0e25e5e575462a0db0326d95fdb3656b
+F
+services/Order/pom.xml,7\f\7f6fa920ff7abdb94db9af1f2ef4ab899ccd4475
+w
+Gservices/Order/src/main/java/com/example/Order/kafka/OrderProducer.java,2\0\20d8b327ca2da7822b4c456e68c0bef4841debe8
+{
+Kservices/Order/src/main/java/com/example/Order/kafka/OrderConfirmation.java,f\0\f032bfadecd0ad90cc8f1dc8143484da6786584d
