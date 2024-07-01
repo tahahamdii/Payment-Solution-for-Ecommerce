@@ -37,6 +37,8 @@ public class ProductClient {
             throw new BusinessException("An error whhile processing the products purchase" + responseEntity.getStatusCode());
         }
 
-    }
+        return responseEntity.getBody();
+
+    };
 
 }

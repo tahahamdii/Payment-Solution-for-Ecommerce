@@ -9,8 +9,12 @@ import com.example.Order.orderline.OrderLineRequest;
 import com.example.Order.orderline.OrderLineService;
 import com.example.Order.product.ProductClient;
 import com.example.Order.product.PurchaseRequest;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -57,5 +61,18 @@ public class OrderService {
 
         return order.getId();
 
+    }
+
+    public List<OrderResponse> findAllOrders() {
+        return repository.findAll()
+                .stream()
+                .map(mapper::fromOrder)
+                .collect(Collectors.toList());
+    }
+
+    public OrderResponse findById(Integer orderId) {
+        return repository.findById(orderId)
+                .map(mapper::fromOrder)
+                .orElseThrow(() -> new EntityNotFoundException(String.format("Order not found")));
     }
 }
