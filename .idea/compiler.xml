@@ -9,6 +9,7 @@
         <module name="Order" />
         <module name="Discovery" />
         <module name="product" />
+        <module name="payment" />
         <module name="ConfigServer" />
         <module name="customer" />
       </profile>
@@ -20,6 +21,7 @@
       <module name="Discovery" options="-parameters" />
       <module name="Order" options="-parameters" />
       <module name="customer" options="-parameters" />
+      <module name="payment" options="-parameters" />
       <module name="product" options="-parameters" />
     </option>
   </component>
