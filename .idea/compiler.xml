@@ -12,6 +12,7 @@
         <module name="Discovery" />
         <module name="payment" />
         <module name="ConfigServer" />
+        <module name="gateway" />
         <module name="customer" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
       <module name="Discovery" options="-parameters" />
       <module name="Order" options="-parameters" />
       <module name="customer" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="notification" options="-parameters" />
       <module name="payment" options="-parameters" />
       <module name="product" options="-parameters" />
