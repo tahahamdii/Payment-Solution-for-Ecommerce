@@ -3,10 +3,9 @@ package com.taha.payment.payment;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/payments")
@@ -21,4 +20,17 @@ public class PaymentController {
     ) {
         return ResponseEntity.ok(this.service.createPayment(request));
     }
+    @GetMapping
+    public ResponseEntity<List<Payment>> getPayments() {
+
+    }
+    @PostMapping
+    public ResponseEntity<Payment> updatePayment(
+
+    )
+    {}
+    @PostMapping
+    public ResponseEntity<Payment> getPayment(
+
+    ){}
 }
