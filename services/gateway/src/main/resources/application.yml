@@ -1,4 +1,9 @@
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: "http://loclahost:9098/realms/micro-services"
   config:
     import: optional:configserver:http://localhost:8888
   application:
