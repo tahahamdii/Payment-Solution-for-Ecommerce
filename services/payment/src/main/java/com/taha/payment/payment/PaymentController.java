@@ -20,17 +20,4 @@ public class PaymentController {
     ) {
         return ResponseEntity.ok(this.service.createPayment(request));
     }
-    @GetMapping
-    public ResponseEntity<List<Payment>> getPayments() {
-
-    }
-    @PostMapping
-    public ResponseEntity<Payment> updatePayment(
-
-    )
-    {}
-    @PostMapping
-    public ResponseEntity<Payment> getPayment(
-
-    ){}
 }
