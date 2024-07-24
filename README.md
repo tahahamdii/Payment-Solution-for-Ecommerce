@@ -3,6 +3,8 @@
 
 This project sets up a microservices development environment using Docker Compose. It leverages several key services to provide a comprehensive and scalable architecture for application development.
 
+![global-architecture](https://github.com/user-attachments/assets/06094545-4912-426c-934a-606ade4e909a)
+
 # Prerequisites
 Docker
 
